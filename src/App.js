@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import EmptyStar from './assets/empty-star.svg';
 import FilledStar from './assets/filled-star.svg';
-import HalfStar from './assets/half-star.svg';
+// import HalfStar from './assets/half-star.svg';
 import './styles.css';
 
 
@@ -30,6 +30,7 @@ const RatingSystem = (props) => {
           {stars.map((star, i) => 
             <div 
               className='star' 
+              key = {i}
               onClick={() => {handleRating(i)}} 
               onMouseOver={() => {handleHover(i)}}
               onMouseOut={()=> {setHover(0)}}
