@@ -35,7 +35,10 @@ const RatingSystem = (props) => {
               onMouseOver={() => {handleHover(i)}}
               onMouseOut={()=> {setHover(0)}}
             >
-              <img src={rating > i || hover > i ? FilledStar : EmptyStar} alt="star" />
+              <img 
+                src = {rating > i || hover > i ? FilledStar : EmptyStar} 
+                alt = {rating > i || hover > i ? "Filled-Star" : "Empty-Star"} 
+              />
             </div>
           )}
         </div>
