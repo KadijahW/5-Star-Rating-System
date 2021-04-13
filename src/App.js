@@ -1,5 +1,7 @@
 import React from 'react';
 import EmptyStar from './assets/empty-star.svg';
+import FilledStar from './assets/filled-star.svg';
+import HalfStar from './assets/half-star.svg';
 import './styles.css';
 
 
