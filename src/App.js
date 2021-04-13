@@ -22,7 +22,7 @@ const RatingSystem = (props) => {
         <div className='bar'>
           {stars.map((star, i) => 
             <div className='star' onClick={() => {handleRating(i)}}>
-              <img src={EmptyStar} alt="empty star" />
+              <img src={rating > i ? FilledStar : EmptyStar} alt="star" />
             </div>
           )}
         </div>
