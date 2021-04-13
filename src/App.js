@@ -12,7 +12,8 @@ const RatingSystem = (props) => {
   stars.fill(1, 0)
   // console.log(props)
   function handleRating(i){
-    setRating(i + 1)
+    if(rating === i + 1) setRating(0)
+    else setRating(i + 1)
   }
 
   return (
